@@ -1,11 +1,8 @@
-'use strict';
+document.getElementById('login_page').addEventListener('click', e => {
+  location.href = "../login/index.html";
+});
 
-function counter() {
-  let seconds = 0;
-  setInterval(() => {
-    seconds += 1;
-    document.getElementById('app').innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
-  }, 1000);
-}
 
-counter();
+document.getElementById('signup_page').addEventListener('click', e => {
+  location.href = "../signup/index.html";
+});
