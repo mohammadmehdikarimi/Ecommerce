@@ -1,0 +1,73 @@
+/**********************************************
+*** HERO
+**********************************************/
+.hero {
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .sentence {
+    position: absolute;
+    top: 48%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sentence h1 {
+    width: 472px;
+    height: 144px;
+    left: 109px;
+    top: 140px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+  }
+  
+  .sentence h1 .italic-and {
+    width: 472px;
+    height: 72px;
+    left: 425px;
+    top: 141px;
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+  }
+  
+  .sentence p {
+    width: 552px;
+    height: 108px;
+    left: 109px;
+    top: 301px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+  }
+  
+  .hero-btn {
+    width: 163px;
+    height: 48px;
+    background-color: #ffffff !important;
+    border-radius: 24px !important;
+  }
+  
+  .text-btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #f62f5e;
+  }
+  
