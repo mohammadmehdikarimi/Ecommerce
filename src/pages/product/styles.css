@@ -21,9 +21,16 @@
   background-color: #f7f7f7;
 }
 
+/**********************************************
+*** MAIN CONTENT
+**********************************************/
 .main-content {
   display: flex;
 }
+
+/**********************************************
+*** SIDEBAR
+**********************************************/
 
 .sidebar {
   width: 220px;
@@ -31,6 +38,10 @@
   height: 697px;
   background-color: antiquewhite;
 }
+
+/**********************************************
+*** CARDS
+**********************************************/
 
 .cards {
   width: 700px;
@@ -63,4 +74,40 @@
   text-align: center;
   margin-top: 15px;
   color: #F62F5E; 
+}
+
+.col-md-4 {
+  position: relative;
+  width: 50%;
+}
+
+.card {
+  opacity: 1;
+  display: block;
+  transition: .5s ease; 
+  backface-visibility: hidden;
+}
+
+.card-hover {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.col-md-4:hover .card {
+  opacity: 0.3; 
+}
+
+.col-md-4:hover .card-hover{
+  opacity: 1;
+}
+
+.card-hover {
+  width: 110px;
+  height: 150px;
+  background-color: red;
 }
