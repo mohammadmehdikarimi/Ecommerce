@@ -15,3 +15,52 @@
   width: 1000px;
 }
 
+.empty {
+  width: 100%;
+  height: 23px;
+  background-color: #f7f7f7;
+}
+
+.main-content {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  margin-left: 30px;
+  height: 697px;
+  background-color: antiquewhite;
+}
+
+.cards {
+  width: 700px;
+  height: 696px;
+  display: flex;
+  margin-left: 20px;
+}
+
+.card-img {
+  width: 163px;
+  height: 163px;
+  margin-top: 32px;
+}
+
+.cards h5 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 21px;
+  color: #2E2E2E;
+}
+
+.cards p {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 15px;
+  color: #F62F5E; 
+}
