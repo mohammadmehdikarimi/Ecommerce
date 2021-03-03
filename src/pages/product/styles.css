@@ -32,13 +32,228 @@
 *** SIDEBAR
 **********************************************/
 
+ul {
+  list-style: none;
+}
+
 .sidebar {
   width: 220px;
   margin-left: 30px;
   height: 697px;
-  background-color: antiquewhite;
 }
 
+.chosen-filters {
+  width: 220px;
+  height: 139px;
+  background: #FAFAFA;
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.101223);
+  border-bottom: solid 0.5px rgb(0 0 0 / 10%);
+}
+
+.chosen-filters h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #B4B4B4;
+}
+
+.chosen-filters ul li {
+  color: #A6A6A6;
+  margin-bottom: 5px;
+}
+
+.filters h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #B4B4B4;
+}
+
+.colors {
+  margin-left: 24px;
+}
+
+.colors img {
+  padding: 4px;
+}
+
+.sizes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 20px;
+}
+
+.sizes a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #6C6C6C;
+  text-decoration: none;
+}
+
+.sizes a:hover {
+  color: #FFFFFF;
+}
+
+.XS-size,
+.S-size,
+.M-size,
+.L-size,
+.XL-size {
+  width: 55px;
+  height: 24px;
+  background: #EFEFEF;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.XS-size:hover,
+.S-size:hover,
+.M-size:hover,
+.L-size:hover,
+.XL-size:hover {
+  background: #F62F5E;
+}
+
+.L-size,
+.XL-size {
+  margin-top: 7px;
+}
+
+
+.middle {
+	position: relative;
+	width: 205px;
+  margin-left: 7px;
+  margin-top: 15px;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 10px;
+	margin: 0 15px;
+}
+.slider > .track {
+  position: absolute;
+  height: 4px;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #EFEFEF;
+}
+.slider > .range {
+  position: absolute;
+  height: 4px;
+	z-index: 2;
+	left: 25%;
+	right: 25%;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #F62F5E;
+}
+.slider > .thumb {
+	position: absolute;
+	z-index: 3;
+	width: 8px;
+	height: 8px;
+	background-color: #F62F5E;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+	transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+	left: 25%;
+	transform: translate(-7px, -2px);
+}
+.slider > .thumb.right {
+	right: 25%;
+	transform: translate(5px, -2px);
+}
+
+input[type=range] {
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 2;
+	height: 10px;
+	width: 100%;
+	opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 30px;
+	height: 30px;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+	-webkit-appearance: none;
+}
+
+.vertical-brands {
+  width: 200px;
+  height: 150px;
+  margin-left: 20px;
+  overflow-y: auto;
+}
+
+.vertical-brands form label {
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #2E2E2E;
+}
+
+.confirm-filters {
+  margin-top: 15px;
+  width: 225px;
+  height: 75px;
+  display: flex;
+  background: #FAFAFA;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.101223);
+}
+
+.sidebar .btn {
+  width: 91px;
+  height: 35px;
+  background-color: #F62F5E;
+}
+
+.sidebar-btn {
+  margin-top: 25px;
+  margin-left: 20px;
+  border-radius: 24px !important;
+  font-family: Montserrat;
+  font-size: 12px !important;
+  color: #FFFFFF !important;
+}
+
+.close-img {
+  margin-left: 10px;
+}
+
+.clear-text {
+  margin-top: 30px;
+  text-decoration: none;
+  font-family: Roboto;
+  color: #F62F5E;
+}
+
+.clear-text:hover {
+  color: #F62F5E;
+}
 /**********************************************
 *** CARDS
 **********************************************/
@@ -73,7 +288,7 @@
   line-height: 24px;
   text-align: center;
   margin-top: 15px;
-  color: #F62F5E; 
+  color: #F62F5E;
 }
 
 .col-md-4 {
@@ -84,7 +299,7 @@
 .card {
   opacity: 1;
   display: block;
-  transition: .5s ease; 
+  transition: .5s ease;
   backface-visibility: hidden;
 }
 
@@ -99,10 +314,10 @@
 }
 
 .col-md-4:hover .card {
-  opacity: 0.3; 
+  opacity: 0.3;
 }
 
-.col-md-4:hover .card-hover{
+.col-md-4:hover .card-hover {
   opacity: 1;
 }
 
