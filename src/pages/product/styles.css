@@ -39,13 +39,14 @@ ul {
 .sidebar {
   width: 220px;
   margin-left: 30px;
+  background-color: #ffffff;
   height: 697px;
 }
 
 .chosen-filters {
   width: 220px;
   height: 139px;
-  background: #FAFAFA;
+  background: #fafafa;
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.101223);
   border-bottom: solid 0.5px rgb(0 0 0 / 10%);
 }
@@ -57,11 +58,11 @@ ul {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #B4B4B4;
+  color: #b4b4b4;
 }
 
 .chosen-filters ul li {
-  color: #A6A6A6;
+  color: #a6a6a6;
   margin-bottom: 5px;
 }
 
@@ -73,7 +74,7 @@ ul {
   line-height: 24px;
   margin-left: 20px;
   margin-top: 20px;
-  color: #B4B4B4;
+  color: #b4b4b4;
 }
 
 .colors {
@@ -96,12 +97,12 @@ ul {
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
-  color: #6C6C6C;
+  color: #6c6c6c;
   text-decoration: none;
 }
 
 .sizes a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .XS-size,
@@ -111,7 +112,7 @@ ul {
 .XL-size {
   width: 55px;
   height: 24px;
-  background: #EFEFEF;
+  background: #efefef;
   text-align: center;
   border-radius: 2px;
 }
@@ -121,7 +122,7 @@ ul {
 .M-size:hover,
 .L-size:hover,
 .XL-size:hover {
-  background: #F62F5E;
+  background: #f62f5e;
 }
 
 .L-size,
@@ -129,78 +130,77 @@ ul {
   margin-top: 7px;
 }
 
-
 .middle {
-	position: relative;
-	width: 205px;
+  position: relative;
+  width: 205px;
   margin-left: 7px;
   margin-top: 15px;
 }
 
 .slider {
-	position: relative;
-	z-index: 1;
-	height: 10px;
-	margin: 0 15px;
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
 }
 .slider > .track {
   position: absolute;
   height: 4px;
-	z-index: 1;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	border-radius: 5px;
-	background-color: #EFEFEF;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #efefef;
 }
 .slider > .range {
   position: absolute;
   height: 4px;
-	z-index: 2;
-	left: 25%;
-	right: 25%;
-	top: 0;
-	bottom: 0;
-	border-radius: 5px;
-	background-color: #F62F5E;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #f62f5e;
 }
 .slider > .thumb {
-	position: absolute;
-	z-index: 3;
-	width: 8px;
-	height: 8px;
-	background-color: #F62F5E;
-	border-radius: 50%;
-	box-shadow: 0 0 0 0 rgba(98,0,238,.1);
-	transition: box-shadow .3s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  width: 8px;
+  height: 8px;
+  background-color: #f62f5e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 .slider > .thumb.left {
-	left: 25%;
-	transform: translate(-7px, -2px);
+  left: 25%;
+  transform: translate(-7px, -2px);
 }
 .slider > .thumb.right {
-	right: 25%;
-	transform: translate(5px, -2px);
+  right: 25%;
+  transform: translate(5px, -2px);
 }
 
-input[type=range] {
-	position: absolute;
-	pointer-events: none;
-	-webkit-appearance: none;
-	z-index: 2;
-	height: 10px;
-	width: 100%;
-	opacity: 0;
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
 }
-input[type=range]::-webkit-slider-thumb {
-	pointer-events: all;
-	width: 30px;
-	height: 30px;
-	border-radius: 0;
-	border: 0 none;
-	background-color: red;
-	-webkit-appearance: none;
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
 }
 
 .vertical-brands {
@@ -213,22 +213,22 @@ input[type=range]::-webkit-slider-thumb {
 .vertical-brands form label {
   font-family: Open Sans;
   font-size: 16px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .confirm-filters {
   margin-top: 15px;
-  width: 225px;
-  height: 75px;
+  width: 220px;
+  height: 80px;
   display: flex;
-  background: #FAFAFA;
+  background: #fafafa;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.101223);
 }
 
 .sidebar .btn {
   width: 91px;
   height: 35px;
-  background-color: #F62F5E;
+  background-color: #f62f5e;
 }
 
 .sidebar-btn {
@@ -237,7 +237,7 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 24px !important;
   font-family: Montserrat;
   font-size: 12px !important;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .close-img {
@@ -248,11 +248,11 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 30px;
   text-decoration: none;
   font-family: Roboto;
-  color: #F62F5E;
+  color: #f62f5e;
 }
 
 .clear-text:hover {
-  color: #F62F5E;
+  color: #f62f5e;
 }
 /**********************************************
 *** CARDS
@@ -278,7 +278,7 @@ input[type=range]::-webkit-slider-thumb {
   line-height: 24px;
   text-align: center;
   margin-top: 21px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .cards p {
@@ -288,7 +288,7 @@ input[type=range]::-webkit-slider-thumb {
   line-height: 24px;
   text-align: center;
   margin-top: 15px;
-  color: #F62F5E;
+  color: #f62f5e;
 }
 
 .col-md-4 {
@@ -299,12 +299,12 @@ input[type=range]::-webkit-slider-thumb {
 .card {
   opacity: 1;
   display: block;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .card-hover {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -313,11 +313,11 @@ input[type=range]::-webkit-slider-thumb {
   text-align: center;
 }
 
-.col-md-4:hover .card {
+.main-card:hover .card {
   opacity: 0.3;
 }
 
-.col-md-4:hover .card-hover {
+.main-card:hover .card-hover {
   opacity: 1;
 }
 
@@ -325,4 +325,38 @@ input[type=range]::-webkit-slider-thumb {
   width: 110px;
   height: 150px;
   background-color: red;
+}
+
+/* ***********************************
+************************************
+ */
+
+.best-products {
+  width: 940px;
+  height: 336px;
+  background-color: #f7f7f7;
+  margin: 24px 0 0 30px;
+}
+
+.best-products img {
+  width: 186px;
+  height: 186px;
+  margin: 32px auto 0 auto;
+}
+
+.best-products h5 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.best-products p {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #f62f5e;
 }
